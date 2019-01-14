@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Wallpoet" rel="stylesheet">
+ </head>
+<body>
+<center><h1>Collaborative Editor</h1></center>
+<div id="container2" class="col-xs-2 container">
+    <p id="edited"></p>
+</div>
+<div id="container" class="col-xs-10 container">
+        <div class="form-group">
+                <label>ENTER YOUR HANDLE</label>
+                <input type="text" class="form-control" id="handle"></input>
+                <br>
+                <label for="comment">CODE:</label>
+                <textarea id="output" class="form-control" rows="25" column="50" id="comment"></textarea>
+        </div>
+</div>
+<script src="/client.js"></script>
+<style>
+    body{
+        font-family: 'Bungee Inline', cursive;
+        background-color: cadetblue;
+    }
+
+    h1{
+        font-size:50px;
+        background-color: cadetblue;
+        padding-top:10px;
+        height:90px;
+        padding-bottom:10px;
+    }
+
+
+    #container2{
+        height:100%;
+        background-color: darkslategray;
+        color:white;
+        padding-left:5px;
+        padding-top:50px;
+        padding-right:5px;
+    }
+
+    #container{
+        height:100%;
+        background-color: grey;
+        padding-left:10px;
+        padding-top:15px;
+        padding-right:10px; 
+    }
+
+    textarea{
+        font-family: 'Wallpoet', cursive;
+    }
+
+
+
+
+</style>
+</body>
+</html>
